@@ -1,6 +1,6 @@
 FROM node:latest
 WORKDIR /app
-COPY ./srtv-project/package.json ./
+COPY package.json ./
 RUN npm install
 COPY . /app
 CMD ["npm", "start"]
