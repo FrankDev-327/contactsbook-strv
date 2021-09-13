@@ -1,6 +1,6 @@
 FROM node:latest
 WORKDIR /app
-COPY package.json ./
+COPY ./strv-project/package.json ./
 RUN npm install
 COPY . /app
 CMD ["npm", "start"]
